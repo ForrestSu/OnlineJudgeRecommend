@@ -75,8 +75,9 @@ def insert_to_problem_sim(mysql,sim):
     print 'insert',int(cnt[0][0]),'rows record';
 
 start=time.time()
-host='localhost' #'172.28.27.26'
-passwd='asdfghjkl@123'
+#host='172.28.27.26'
+host='localhost' 
+passwd='123456'
 mysql=dbutil._MySQL(host,3306,'root',passwd,'jol')
 #1.加载用户数据字典
 udict=load_user_dict(mysql)  
